@@ -7,6 +7,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import Header from './header'
 
+require('typeface-playfair-display')
+require('typeface-roboto')
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -30,9 +33,10 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="container"
+        <main
+          className="container"
           style={{
-            marginTop: '80px'
+            marginTop: '80px',
           }}
         >
           {children}

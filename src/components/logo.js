@@ -17,16 +17,22 @@ const Logo = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "joeys-pizza-logo-w300-onblack.png" }) {
+        logo: file(relativePath: { eq: "joeys-pizza-logo-onblack.png" }) {
           childImageSharp {
             fixed(width: 150) {
-              ...GatsbyImageSharpFixed
+              ...GatsbyImageSharpFixed_noBase64
             }
           }
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} critical={true} fadeIn={false} alt="Joeys Pizza logo" />}
+    render={data => (
+      <Img
+        fixed={data.logo.childImageSharp.fixed}
+        critical={true}
+        alt="Joeys Pizza logo"
+      />
+    )}
   />
 )
 export default Logo
