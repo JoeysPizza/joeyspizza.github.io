@@ -26,7 +26,7 @@ const Logo = () => (
         }
       }
     `}
-    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} fadeIn={false} alt="Joeys Pizza logo" />}
+    render={data => <Img fixed={data.placeholderImage.childImageSharp.fixed} critical={true} fadeIn={false} alt="Joeys Pizza logo" />}
   />
 )
 export default Logo
