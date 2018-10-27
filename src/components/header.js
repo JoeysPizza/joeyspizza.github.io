@@ -11,7 +11,7 @@ export default class Header extends Component {
         dark
         expand="sm"
         className="fixed-top"
-        style={{ backgroundColor: '#000' }}
+        style={{ backgroundColor: '#000', height: '70px' }}
       >
         <div className="container">
           <Link
@@ -29,12 +29,11 @@ export default class Header extends Component {
                 style={{
                   color: '#fff',
                   fontFamily: 'Roboto, sans-serif',
-                  fontSize: '14px',
-                  padding: 0,
                 }}
               >
-                1801 Wolf Rd, Hillside, IL <br />
-                (708) 593-3939
+                <span>1801 Wolf Rd, Hillside, IL</span>
+                <br />
+                <a href="tel:+17085933939">(708) 593-3939</a>
               </span>
             </NavItem>
           </Nav>

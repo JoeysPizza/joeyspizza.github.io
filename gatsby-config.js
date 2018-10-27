@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Joeys Pizza - 1801 Wolf Road - Hillside, IL',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

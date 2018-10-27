@@ -1,156 +1,108 @@
 import React from 'react'
 
+function displaySection(heading, items) {
+  const menuItems = items.map((item, i) => (
+    <li key={i}>
+      <span>{item[0]}</span>
+      <span>${item[1].toFixed(2)}</span>
+    </li>
+  ))
+  return (
+    <div>
+      <h3 style={{ fontSize: '22px' }}>{heading}</h3>
+      <ul className="leaders">{menuItems}</ul>
+    </div>
+  )
+}
+
 const Menu = () => (
   <div>
-    <div className="row">
-      <div className="col-md">
-        <h2>Pasta</h2>
-        <p>
-          <i>All pastas are served with one sausage or meatball</i>
-        </p>
-        <table className="table">
-          <tbody>
-            <tr>
-              <td>Ravioli</td>
-              <td>9.50</td>
-            </tr>
-            <tr>
-              <td>Gnocchi</td>
-              <td>9.50</td>
-            </tr>
-            <tr>
-              <td>Tortellini</td>
-              <td>9.50</td>
-            </tr>
-            <tr>
-              <td>Spaghetti</td>
-              <td>8.00</td>
-            </tr>
-            <tr>
-              <td>Rigatoni</td>
-              <td>8.00</td>
-            </tr>
-            <tr>
-              <td>Extra Sausage or Meatball</td>
-              <td>1.75</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div className="col-md">
-        <h2>Sandwiches</h2>
-        <table className="table">
-          <tbody>
-            <tr>
-              <td>Breaded Steak</td>
-              <td>7.50</td>
-            </tr>
-            <tr>
-              <td>Chicken Parmesan</td>
-              <td>7.00</td>
-            </tr>
-            <tr>
-              <td>4 Piece Chicken</td>
-              <td>8.50</td>
-            </tr>
-            <tr>
-              <td>Meatball</td>
-              <td>6.00</td>
-            </tr>
-            <tr>
-              <td>Cheese, Sweet or Hot Peppers</td>
-              <td>.50</td>
-            </tr>
-            <tr>
-              <td>Hamburger</td>
-              <td>4.50</td>
-            </tr>
-            <tr>
-              <td>Cheeseburger</td>
-              <td>5.00</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <h1
+      className="text-center"
+      style={{
+        marginBottom: '40px',
+        color: '#a60512',
+      }}
+    >
+      Our Menu
+    </h1>
 
     <div className="row">
       <div className="col-md">
-        <h2>Side Orders</h2>
-        <table className="table">
-          <tbody>
-            <tr>
-              <td>Cheese Sticks</td>
-              <td>3.95</td>
-            </tr>
-            <tr>
-              <td>French Fries</td>
-              <td>1.95</td>
-            </tr>
-            <tr>
-              <td>Onion Rings</td>
-              <td>3.95</td>
-            </tr>
-            <tr>
-              <td>Chicken Tenders</td>
-              <td>4.50</td>
-            </tr>
-            <tr>
-              <td>Garlic Bread</td>
-              <td>1.75</td>
-            </tr>
-          </tbody>
-        </table>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            width: '100%',
+          }}
+        >
+          <div style={{ width: '350px', marginBottom: '40px' }}>
+            {displaySection('Pizza', [
+              ['Small (10″)', 8.95],
+              ['Medium (12″)', 12],
+              ['Large (14″)', 14],
+              ['Large (16″)', 16.5],
+            ])}
+
+            <h4 style={{ fontSize: '18px' }}>Extra Ingredients</h4>
+
+            <ul
+              className="list-unstyled"
+              style={{ columnCount: 2, marginBottom: '5px' }}
+            >
+              <li>10″ - $1.50</li>
+              <li>12″ - $1.00</li>
+              <li>14″ - $2.00</li>
+              <li>16″ - $2.00</li>
+            </ul>
+            <p style={{ marginBottom: '5px' }}>Your choice of:</p>
+            <ul
+              className="list-unstyled"
+              style={{ columnCount: 2, marginBottom: '4px' }}
+            >
+              <li>Sausage</li>
+              <li>Mushroom</li>
+              <li>Green Pepper</li>
+              <li>Onion</li>
+              <li>Tomato</li>
+              <li>Pepperoni</li>
+              <li>Hot Pepper</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div className="col-md">
-        <h2>Beverages</h2>
-        <table className="table">
-          <tbody>
-            <tr>
-              <td>Beer</td>
-              <td>3.00</td>
-            </tr>
-            <tr>
-              <td>Wine</td>
-              <td>3.00</td>
-            </tr>
-            <tr>
-              <td>Soda</td>
-              <td>1.00</td>
-            </tr>
-            <tr>
-              <td>Coffee</td>
-              <td>1.00</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            width: '100%',
+          }}
+        >
+          <div style={{ width: '350px' }}>
+            {displaySection('Pastas', [
+              ['Ravioli', 9.5],
+              ['Gnocchi', 9.5],
+              ['Tortellini', 9.5],
+              ['Spaghetti', 8],
+              ['Rigatoni', 8],
+            ])}
 
-    <div className="row">
-      <div className="col-md">
-        <h2>Italian Desserts</h2>
-        <table className="table">
-          <tbody>
-            <tr>
-              <td>Connoli</td>
-              <td>3.00</td>
-            </tr>
-            <tr>
-              <td>Pasticciotti</td>
-              <td>3.00</td>
-            </tr>
-            <tr>
-              <td>Eclairs</td>
-              <td>3.00</td>
-            </tr>
-          </tbody>
-        </table>
+            {displaySection('Sandwich', [
+              ['Homemade Italian Beer', 6.5],
+              ['Italian Sausage', 5.25],
+              ['Combo (Beef & Sausage', 7.5],
+              ['Char-Broil Steak Sandwich', 7.5],
+              ['Philly Cheese Steak', 7.5],
+              ['Chicago Vienna Hot Dog with Fries', 3.75],
+              ['Maxwell Street Polish with Fries', 4.5],
+              ['Chicken Sandwich', 6],
+              ['Fish Sandwich with Fries', 6],
+            ])}
+          </div>
+        </div>
       </div>
-
-      <div className="col-md" />
     </div>
   </div>
 )
