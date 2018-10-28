@@ -17,12 +17,13 @@ const Logo = () => (
   <StaticQuery
     query={graphql`
       query {
-        logo: file(
-          relativePath: { eq: "joeys-pizza-simple-logo-onblack.png" }
-        ) {
+        logo: file(relativePath: { eq: "joeys-pizza-main-logo.png" }) {
           childImageSharp {
-            fixed(width: 150) {
+            fixed(width: 500) {
               ...GatsbyImageSharpFixed_noBase64
+            }
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -30,9 +31,16 @@ const Logo = () => (
     `}
     render={data => (
       <Img
-        fixed={data.logo.childImageSharp.fixed}
-        critical={true}
-        alt="Joeys Pizza logo"
+        fluid={data.logo.childImageSharp.fluid}
+        className="large-logo"
+        style={{
+          margin: '0 auto',
+          position: 'absolute',
+          top: '25px',
+          left: 0,
+          right: 0,
+          width: '300px',
+        }}
       />
     )}
   />

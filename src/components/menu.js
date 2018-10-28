@@ -20,8 +20,7 @@ const Menu = () => (
     <h1
       className="text-center"
       style={{
-        marginBottom: '40px',
-        color: '#a60512',
+        marginBottom: '40px'
       }}
     >
       Our Menu
@@ -37,25 +36,31 @@ const Menu = () => (
           }}
         >
           <div style={{ width: '350px', marginBottom: '40px' }}>
-            {displaySection('Pizza', [
+            {displaySection('Cheese Pizza', [
               ['Small (10″)', 8.95],
               ['Medium (12″)', 12],
               ['Large (14″)', 14],
               ['Large (16″)', 16.5],
             ])}
 
+            {displaySection('Deep Dish Cheese Pizza', [
+              ['Small (10″)', 11],
+              ['Medium (12″)', 14.5],
+              ['Large (14″)', 17.5],
+            ])}
+
             <h4 style={{ fontSize: '18px' }}>Extra Ingredients</h4>
 
             <ul
               className="list-unstyled"
-              style={{ columnCount: 2, marginBottom: '5px' }}
+              style={{ columnCount: 2, marginBottom: '8px' }}
             >
               <li>10″ - $1.50</li>
               <li>12″ - $1.00</li>
               <li>14″ - $2.00</li>
               <li>16″ - $2.00</li>
             </ul>
-            <p style={{ marginBottom: '5px' }}>Your choice of:</p>
+            <p style={{ marginBottom: '8px' }}>Your choice of:</p>
             <ul
               className="list-unstyled"
               style={{ columnCount: 2, marginBottom: '4px' }}

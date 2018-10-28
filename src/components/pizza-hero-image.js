@@ -13,16 +13,17 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Logo = () => (
+const PizzaHeroImage = () => (
   <StaticQuery
     query={graphql`
       query {
-        logo: file(
-          relativePath: { eq: "joeys-pizza-simple-logo-onblack.png" }
-        ) {
+        hero: file(relativePath: { eq: "large-cheese-pizza.jpg" }) {
           childImageSharp {
-            fixed(width: 150) {
+            fixed(width: 2000) {
               ...GatsbyImageSharpFixed_noBase64
+            }
+            fluid(maxWidth: 2000) {
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -30,11 +31,10 @@ const Logo = () => (
     `}
     render={data => (
       <Img
-        fixed={data.logo.childImageSharp.fixed}
-        critical={true}
-        alt="Joeys Pizza logo"
+        fluid={data.hero.childImageSharp.fluid}
+        style={{ maxHeight: '400px' }}
       />
     )}
   />
 )
-export default Logo
+export default PizzaHeroImage

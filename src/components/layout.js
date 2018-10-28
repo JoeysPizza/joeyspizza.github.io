@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './layout.css'
 
 import Header from './header'
+import Footer from './footer'
 
 require('typeface-playfair-display')
 require('typeface-roboto')
@@ -34,7 +35,8 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="container">{children}</main>
+        <main className="container" style={{paddingTop: '15px'}}>{children}</main>
+        <Footer />
       </>
     )}
   />
