@@ -35,7 +35,9 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="container" style={{paddingTop: '15px'}}>{children}</main>
+        <main className="container" style={{ paddingTop: '15px' }}>
+          {children}
+        </main>
         <Footer />
       </>
     )}

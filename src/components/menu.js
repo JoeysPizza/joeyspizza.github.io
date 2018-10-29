@@ -20,7 +20,7 @@ const Menu = () => (
     <h1
       className="text-center"
       style={{
-        marginBottom: '40px'
+        marginBottom: '40px',
       }}
     >
       Our Menu
@@ -94,17 +94,28 @@ const Menu = () => (
               ['Rigatoni', 8],
             ])}
 
-            {displaySection('Sandwich', [
-              ['Homemade Italian Beer', 6.5],
+            {displaySection('Sandwiches', [
+              ['Homemade Italian Beef', 6.5],
               ['Italian Sausage', 5.25],
-              ['Combo (Beef & Sausage', 7.5],
+              ['Combo (Beef & Sausage)', 7.5],
               ['Char-Broil Steak Sandwich', 7.5],
               ['Philly Cheese Steak', 7.5],
               ['Chicago Vienna Hot Dog with Fries', 3.75],
               ['Maxwell Street Polish with Fries', 4.5],
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
+              ['Itailian Breaded Steak', 7.5],
+              ['Chicken Parmesan', 7],
+              ['Meatball', 6],
+              ['Pepper & Eggs Sandwich', 5.5],
+              ['Egg Plant Sandwich', 6],
             ])}
+            <p
+              className="small"
+              style={{ margin: '-16px 0 16px', fontStyle: 'italic' }}
+            >
+              Cheese, Sweet, or Hot Peppers $0.50
+            </p>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => (
-  <div className="container" style={{marginBottom: '20px'}}>
+  <div className="container" style={{ marginBottom: '20px' }}>
     <div className="row">
       <div className="col-md">
         <h2>Contact</h2>
@@ -16,7 +16,10 @@ const Footer = () => (
 
       <div className="col-md">
         <h2>Hours</h2>
-        <table className="table table-sm table-borderless table-hours" style={{ maxWidth: '350px' }}>
+        <table
+          className="table table-sm table-borderless table-hours"
+          style={{ maxWidth: '350px' }}
+        >
           <tbody>
             <tr>
               <td>Sun</td>
