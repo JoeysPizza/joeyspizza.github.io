@@ -44,12 +44,12 @@ export default class Header extends Component {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/menu" className="nav-link">
+                <Link to="/menu/" className="nav-link">
                   Menu
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/contact" className="nav-link">
+                <Link to="/contact/" className="nav-link">
                   Contact
                 </Link>
               </NavItem>

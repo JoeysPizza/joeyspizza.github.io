@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = () => (
-  <div className="container" style={{ marginBottom: '20px' }}>
+  <div className="container" style={{ margin: '20px auto' }}>
     <div className="row">
       <div className="col-md">
         <h2>Contact</h2>
