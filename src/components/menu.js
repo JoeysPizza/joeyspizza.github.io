@@ -1,16 +1,27 @@
 import React from 'react'
 
-function displaySection(heading, items) {
-  const menuItems = items.map((item, i) => (
-    <li key={i}>
-      <span>{item[0]}</span>
-      <span>${item[1].toFixed(2)}</span>
-    </li>
-  ))
+function MenuSection({ heading, items, children }) {
+  const menuItems = items.map((item, i) => {
+    let description = ''
+    if (item[2]) {
+      description = <p className="small font-italic">{item[2]}</p>
+    }
+    return (
+      <li key={i}>
+        <span>{item[0]}</span>
+        <span>${item[1].toFixed(2)}</span>
+        {description}
+      </li>
+    )
+  })
+
   return (
-    <div>
+    <div style={{ marginBottom: '24px' }}>
       <h3 style={{ fontSize: '22px' }}>{heading}</h3>
-      <ul className="leaders">{menuItems}</ul>
+      <ul className="leaders" style={{ marginBottom: 0 }}>
+        {menuItems}
+      </ul>
+      {children}
     </div>
   )
 }
@@ -35,19 +46,27 @@ const Menu = () => (
             width: '100%',
           }}
         >
-          <div style={{ width: '350px', marginBottom: '40px' }}>
-            {displaySection('Cheese Pizza', [
-              ['Small (10″)', 8.95],
-              ['Medium (12″)', 12],
-              ['Large (14″)', 14],
-              ['Large (16″)', 16.5],
-            ])}
+          <div style={{ width: '350px' }}>
+            <MenuSection
+              heading="Cheese Pizza"
+              items={[
+                ['Small (10″)', 8.95],
+                ['Medium (12″)', 12],
+                ['Large (14″)', 14],
+                ['Large (16″)', 16.5],
+              ]}
+            >
+              <p className="small font-italic">Pizza by the slice is $3.50</p>
+            </MenuSection>
 
-            {displaySection('Deep Dish Cheese Pizza', [
-              ['Small (10″)', 11],
-              ['Medium (12″)', 14.5],
-              ['Large (14″)', 17.5],
-            ])}
+            <MenuSection
+              heading="Deep Dish Cheese Pizza"
+              items={[
+                ['Small (10″)', 11],
+                ['Medium (12″)', 14.5],
+                ['Large (14″)', 17.5],
+              ]}
+            />
 
             <h4 style={{ fontSize: '18px' }}>Extra Ingredients</h4>
 
@@ -63,7 +82,7 @@ const Menu = () => (
             <p style={{ marginBottom: '8px' }}>Your choice of:</p>
             <ul
               className="list-unstyled"
-              style={{ columnCount: 2, marginBottom: '4px' }}
+              style={{ columnCount: 2, marginBottom: '24px' }}
             >
               <li>Sausage</li>
               <li>Mushroom</li>
@@ -73,6 +92,46 @@ const Menu = () => (
               <li>Pepperoni</li>
               <li>Hot Pepper</li>
             </ul>
+
+            <MenuSection
+              heading="Pastas"
+              items={[
+                ['Ravioli', 9.5],
+                ['Gnocchi', 9.5],
+                ['Tortellini', 9.5],
+                ['Spaghetti', 8],
+                ['Rigatoni', 8],
+              ]}
+            >
+              <p className="small font-italic">
+                All pastas served with one sausage or meatball <br />
+                Any extra sausage or meatball $1.75
+              </p>
+            </MenuSection>
+
+            <MenuSection
+              heading="Salads"
+              items={[
+                [
+                  'Chicken Salad',
+                  7,
+                  'Romaine lettuce, tomato, & parmesan cheese',
+                ],
+                [
+                  "Caruso's Salad",
+                  7,
+                  'Lettuce, tomato, salami, black olives, pepperoncinis, provolone, garlic, and italian dressing',
+                ],
+              ]}
+            />
+
+            <MenuSection
+              heading="Burgers"
+              items={[
+                ['Hamburger with Fries', 5],
+                ['Cheeseburger with Fries', 5.5],
+              ]}
+            />
           </div>
         </div>
       </div>
@@ -86,36 +145,59 @@ const Menu = () => (
           }}
         >
           <div style={{ width: '350px' }}>
-            {displaySection('Pastas', [
-              ['Ravioli', 9.5],
-              ['Gnocchi', 9.5],
-              ['Tortellini', 9.5],
-              ['Spaghetti', 8],
-              ['Rigatoni', 8],
-            ])}
-
-            {displaySection('Sandwiches', [
-              ['Homemade Italian Beef', 6.5],
-              ['Italian Sausage', 5.25],
-              ['Combo (Beef & Sausage)', 7.5],
-              ['Char-Broil Steak Sandwich', 7.5],
-              ['Philly Cheese Steak', 7.5],
-              ['Chicago Vienna Hot Dog with Fries', 3.75],
-              ['Maxwell Street Polish with Fries', 4.5],
-              ['Chicken Sandwich', 6],
-              ['Fish Sandwich with Fries', 6],
-              ['Itailian Breaded Steak', 7.5],
-              ['Chicken Parmesan', 7],
-              ['Meatball', 6],
-              ['Pepper & Eggs Sandwich', 5.5],
-              ['Egg Plant Sandwich', 6],
-            ])}
-            <p
-              className="small"
-              style={{ margin: '-16px 0 16px', fontStyle: 'italic' }}
+            <MenuSection
+              heading="Sandwiches"
+              items={[
+                ['Homemade Italian Beef', 6.5],
+                ['Italian Sausage', 5.25],
+                ['Combo (Beef & Sausage)', 7.5],
+                ['Char-Broil Steak Sandwich', 7.5],
+                ['Philly Cheese Steak', 7.5],
+                ['Chicago Vienna Hot Dog with Fries', 3.75],
+                ['Maxwell Street Polish with Fries', 4.5],
+                ['Chicken Sandwich', 6],
+                ['Fish Sandwich with Fries', 6],
+                ['Italian Breaded Steak', 7.5],
+                ['Chicken Parmesan', 7],
+                ['Meatball', 6],
+                ['Pepper & Eggs Sandwich', 5.5],
+                ['Egg Plant Sandwich', 6],
+                ['Italian Sub', 7],
+              ]}
             >
-              Cheese, Sweet, or Hot Peppers $0.50
-            </p>
+              <p className="small font-italic">
+                Cheese, Sweet, or Hot Peppers $0.50
+              </p>
+            </MenuSection>
+
+            <MenuSection
+              heading="Chicken Wings"
+              items={[['5 Pieces with Fries', 6.99]]}
+            />
+
+            <MenuSection
+              heading="Side Orders"
+              items={[
+                ['French Fries', 1.95],
+                ['Cheese Sticks', 3.95],
+                ['Onion Rings', 17.5],
+                ['Chicken Tenders', 4.5],
+                ['Garlic Bread', 1.75],
+                ['Gravy Bread', 1.5],
+              ]}
+            />
+
+            <MenuSection heading="Italian Desserts" items={[['Cannoli', 3]]} />
+
+            <MenuSection
+              heading="Beverages"
+              items={[
+                ['Cans', 1],
+                ['1 Liter Pop', 1.95],
+                ['20 Oz. Fountain', 1.75],
+                ['Water', 1],
+              ]}
+            />
           </div>
         </div>
       </div>
