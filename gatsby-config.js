@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Joeys Pizza - 1801 Wolf Road - Hillside, IL',
+    description: 'Fresh and delicious pizza, pasta, sandwiches and more',
+    keywords: 'pizza, sandwiches, dine-in, fast food'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
