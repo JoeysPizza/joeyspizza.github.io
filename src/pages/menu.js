@@ -6,7 +6,7 @@ import Menu from '../components/menu'
 
 const MenuPage = () => (
   <Layout>
-    <Helmet title="Restaurant Menu - Joeys Pizza - Hillside, IL" />
+    <Helmet title="Menu - Joeys Pizza - Hillside, IL" />
     <h1
       className="text-center"
       style={{
