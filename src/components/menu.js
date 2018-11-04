@@ -1,30 +1,5 @@
 import React from 'react'
-
-function MenuSection({ heading, items, children }) {
-  const menuItems = items.map((item, i) => {
-    let description = ''
-    if (item[2]) {
-      description = <p className="small font-italic">{item[2]}</p>
-    }
-    return (
-      <li key={i}>
-        <span>{item[0]}</span>
-        <span>${item[1].toFixed(2)}</span>
-        {description}
-      </li>
-    )
-  })
-
-  return (
-    <div style={{ marginBottom: '24px' }}>
-      <h3 style={{ fontSize: '22px' }}>{heading}</h3>
-      <ul className="leaders" style={{ marginBottom: 0 }}>
-        {menuItems}
-      </ul>
-      {children}
-    </div>
-  )
-}
+import MenuSection from './menu-section'
 
 const Menu = () => (
   <div className="row">

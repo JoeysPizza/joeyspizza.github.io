@@ -22,7 +22,7 @@ export default class Header extends Component {
     return (
       <Navbar
         dark
-        expand="sm"
+        expand="md"
         className="fixed-top"
         style={{ backgroundColor: '#000' }}
       >
@@ -46,6 +46,11 @@ export default class Header extends Component {
               <NavItem>
                 <Link to="/menu/" className="nav-link">
                   Menu
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/catering-menu/" className="nav-link">
+                  Catering Menu
                 </Link>
               </NavItem>
               <NavItem>
