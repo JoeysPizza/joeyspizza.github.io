@@ -28,9 +28,8 @@ const ContactPage = () => (
             src="https://gregjopa.wufoo.com/embed/s2xab2m06onge5/def/&amp;header=hide"
             height="500px"
             width="100%"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            allowtransparency="true"
             style={{ width: '100%', border: 'none' }}
           />
         </div>
