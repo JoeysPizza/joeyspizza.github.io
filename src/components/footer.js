@@ -7,7 +7,7 @@ const Footer = () => (
         <h2>Contact</h2>
         <p>
           Joeys Pizza <br />
-          1801 Wolf Rd, Hillside, IL <br />
+          1801 S Wolf Rd, Hillside, IL 60162<br />
           <a href="tel:+17085933939" style={{ color: '#650205' }}>
             (708) 593-3939
           </a>
