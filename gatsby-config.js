@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Joeys Pizza - Pizza Restaurant - 1801 S Wolf Rd, Hillside, IL',
-    description: 'Joeys Pizza is a quick casual restaurant offering Pizza, Italian Beef, ' +
-      'Salads, Wings, and more. Dine-in or carryout in Hillside, IL near Oakbrook and Elmhurst.',
+    description: 'Joeys Pizza is a family-owned restaurant offering Pizza, Italian Beef, ' +
+      'Sandwiches, Wings, and more. Fast and delicious food with a comfortable atmosphere.',
     keywords: 'pizza, sandwiches, dine-in, fast food'
   },
   plugins: [
