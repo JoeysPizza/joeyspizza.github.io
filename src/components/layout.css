@@ -93,3 +93,9 @@ ul.leaders span + span {
     margin: 45px 0;
   }
 }
+
+@media (min-width:992px) {
+  .card-party-pack .card-body {
+    min-height: 290px;
+  }
+}
