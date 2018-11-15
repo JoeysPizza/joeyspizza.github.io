@@ -19,11 +19,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Joeys Pizza in Hillside, IL',
+        short_name: 'Joeys',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#000',
+        theme_color: '#000',
         display: 'minimal-ui',
         icon: 'src/images/j-icon.png', // This path is relative to the root of the site.
       },
