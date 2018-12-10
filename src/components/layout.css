@@ -75,6 +75,10 @@ ul.leaders span + span {
   font-size: 22px;
 }
 
+footer .col-md {
+  margin-bottom: 25px;
+}
+
 @media (min-width: 576px) {
   .large-logo {
     top: 60px !important;

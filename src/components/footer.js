@@ -2,9 +2,10 @@ import React from 'react'
 import iconFacebook from '../images/svg/facebook.svg'
 import iconYelp from '../images/svg/yelp.svg'
 import iconGoogle from '../images/svg/google.svg'
+import iconUberEats from '../images/svg/uber-eats.svg'
 
 const Footer = () => (
-  <div className="container" style={{ margin: '20px auto' }}>
+  <footer className="container" style={{ margin: '20px auto' }}>
     <div className="row">
       <div className="col-md">
         <h2>Contact</h2>
@@ -95,8 +96,24 @@ const Footer = () => (
           </a>
         </div>
       </div>
+
+      <div className="col-md">
+        <h2>Order Delivery</h2>
+        <p>Joeys Pizza is on Uber Eats!</p>
+        <a
+          href="https://www.ubereats.com/en-US/chicago/food-delivery/joeys-pizza/WGpsHfz6SNKzBm312STpbg/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={iconUberEats}
+            alt="joeys pizza on uber eats"
+            style={{ width: '150px', paddingTop: '6px' }}
+          />
+        </a>
+      </div>
     </div>
-  </div>
+  </footer>
 )
 
 export default Footer
