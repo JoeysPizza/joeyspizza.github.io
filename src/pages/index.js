@@ -18,7 +18,7 @@ const IndexPage = () => (
           </h1>
           <Link
             className="btn btn-primary btn-lg"
-            to="/menu"
+            to="/menu/"
             style={{ margin: '18px 0' }}
           >
             View Menu
