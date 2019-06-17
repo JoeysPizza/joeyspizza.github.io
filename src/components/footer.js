@@ -32,27 +32,27 @@ const Footer = () => (
             </tr>
             <tr>
               <td>Mon</td>
-              <td>10:30 am - 10:00 pm</td>
+              <td>10:30 am - 9:00 pm</td>
             </tr>
             <tr>
               <td>Tue</td>
-              <td>10:30 am - 10:00 pm</td>
+              <td>10:30 am - 9:00 pm</td>
             </tr>
             <tr>
               <td>Wed</td>
-              <td>10:30 am - 10:00 pm</td>
+              <td>10:30 am - 9:00 pm</td>
             </tr>
             <tr>
               <td>Thu</td>
-              <td>10:30 am - 10:00 pm</td>
+              <td>10:30 am - 9:00 pm</td>
             </tr>
             <tr>
               <td>Fri</td>
-              <td>10:30 am - 10:00 pm</td>
+              <td>10:30 am - 9:00 pm</td>
             </tr>
             <tr>
               <td>Sat</td>
-              <td>10:30 am - 10:00 pm</td>
+              <td>10:30 am - 9:00 pm</td>
             </tr>
           </tbody>
         </table>
