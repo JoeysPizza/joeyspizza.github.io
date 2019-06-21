@@ -28,7 +28,7 @@ const Footer = () => (
           <tbody>
             <tr>
               <td>Sun</td>
-              <td>12:00 pm - 8:00 pm</td>
+              <td>Closed</td>
             </tr>
             <tr>
               <td>Mon</td>
