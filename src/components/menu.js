@@ -143,7 +143,7 @@ const Menu = () => (
           <MenuSection
             heading="Side Orders"
             items={[
-              ['French Fries', 1.95],
+              ['French Fries', 2.45],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
               ['Chicken Tenders', 4.5],
