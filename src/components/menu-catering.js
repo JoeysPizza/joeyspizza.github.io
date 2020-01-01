@@ -57,8 +57,8 @@ const CateringMenu = () => (
           <MenuSection
             heading="Homemade Beef and Gravy"
             items={[
-              ['Beef', '$10.50 a pound'],
-              ['French Bread', '$3 a loaf'],
+              ['Beef', '$11.50 a pound'],
+              ['French Bread', '$3.50 a loaf'],
             ]}
           />
 
@@ -72,7 +72,7 @@ const CateringMenu = () => (
 
           <MenuSection
             heading="Hot or Sweet Peppers"
-            items={[['1/2 Pint', 2], ['Pint', 4], ['Quart', 6]]}
+            items={[['1/2 Pint', 2.25], ['Pint', 4.25], ['Quart', 6.50]]}
           />
         </div>
       </div>

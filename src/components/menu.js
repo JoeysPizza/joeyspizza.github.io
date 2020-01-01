@@ -144,6 +144,7 @@ const Menu = () => (
             heading="Side Orders"
             items={[
               ['French Fries', 2.45],
+              ['Cheese Fries', 2.95],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
               ['Chicken Tenders', 4.5],
