@@ -3,6 +3,7 @@ import iconFacebook from '../images/svg/facebook.svg'
 import iconYelp from '../images/svg/yelp.svg'
 import iconGoogle from '../images/svg/google.svg'
 import iconUberEats from '../images/svg/uber-eats.svg'
+import iconGrubhub from '../images/svg/grubhub.svg'
 
 const Footer = () => (
   <footer className="container" style={{ margin: '20px auto' }}>
@@ -99,7 +100,23 @@ const Footer = () => (
 
       <div className="col-md">
         <h2>Order Delivery</h2>
-        <p>Joeys Pizza is on Uber Eats!</p>
+
+        <p>Joeys Pizza is on Grubhub!</p>
+        <a
+          href="https://www.grubhub.com/restaurant/joeys-pizza-1801-s-wolf-rd-hillside/2057225"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={iconGrubhub}
+            alt="joeys pizza on grubhub"
+            style={{ width: '180px', paddingTop: '6px' }}
+          />
+        </a>
+
+        <hr />
+
+        <p>and Uber Eats too!</p>
         <a
           href="https://www.ubereats.com/en-US/chicago/food-delivery/joeys-pizza/WGpsHfz6SNKzBm312STpbg/"
           target="_blank"
