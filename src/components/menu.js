@@ -137,7 +137,11 @@ const Menu = () => (
 
           <MenuSection
             heading="Chicken Wings"
-            items={[['5 Pieces with Fries', 6.99]]}
+            items={[
+              ['5 Pieces with Fries', 6.99],
+              ['10 Pieces with Fries', 8.49],
+              ['20 Pieces with Fries', 15.99]
+            ]}
           />
 
           <MenuSection
