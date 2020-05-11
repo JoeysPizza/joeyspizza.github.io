@@ -18,7 +18,7 @@ const Menu = () => (
               ['Small (10″)', 8.95],
               ['Medium (12″)', 12],
               ['Large (14″)', 14],
-              ['Large (16″)', 16.5],
+              ['Extra Large (16″)', 16.5],
             ]}
           >
             <p className="small font-italic">Pizza by the slice is $3.50</p>
