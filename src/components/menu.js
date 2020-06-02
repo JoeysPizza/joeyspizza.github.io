@@ -113,13 +113,13 @@ const Menu = () => (
           <MenuSection
             heading="Sandwiches"
             items={[
-              ['Homemade Italian Beef', 6.5],
+              ['Homemade Italian Beef', 7.5],
               ['Italian Sausage', 5.25],
               ['Combo (Beef & Sausage)', 7.5],
               ['Char-Broil Steak Sandwich', 7.5],
               ['Philly Cheese Steak', 7.5],
               ['Chicago Vienna Hot Dog with Fries', 3.75],
-              ['Maxwell Street Polish with Fries', 4.5],
+              ['Maxwell Street Polish with Fries', 5.5],
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
               ['Italian Breaded Steak', 7.5],
@@ -139,8 +139,8 @@ const Menu = () => (
             heading="Chicken Wings"
             items={[
               ['5 Pieces with Fries', 6.99],
-              ['10 Pieces with Fries', 8.49],
-              ['20 Pieces with Fries', 15.99]
+              ['10 Pieces with Fries', 9.50],
+              ['20 Pieces with Fries', 17.50]
             ]}
           />
 
