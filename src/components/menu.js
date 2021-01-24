@@ -40,7 +40,7 @@ const Menu = () => (
             style={{ columnCount: 2, marginBottom: '8px' }}
           >
             <li>10″ - $1.50</li>
-            <li>12″ - $1.00</li>
+            <li>12″ - $1.90</li>
             <li>14″ - $2.00</li>
             <li>16″ - $2.00</li>
           </ul>
@@ -113,7 +113,7 @@ const Menu = () => (
           <MenuSection
             heading="Sandwiches"
             items={[
-              ['Homemade Italian Beef', 7.5],
+              ['Homemade Italian Beef', 6.99],
               ['Italian Sausage', 5.25],
               ['Combo (Beef & Sausage)', 7.5],
               ['Char-Broil Steak Sandwich', 7.5],

@@ -19,10 +19,24 @@ const IndexPage = () => (
           <Link
             className="btn btn-primary btn-lg"
             to="/menu/"
-            style={{ margin: '18px 0' }}
+            style={{ margin: '20px 0', fontWeight: 'bold', minWidth: '250px' }}
           >
             View Menu
           </Link>
+
+          <div
+            style={{
+              fontSize: '30px',
+              margin: '20px auto 60px auto',
+              color: 'rgb(166, 5, 18)',
+              border: '1px solid black',
+              padding: '20px 10px'
+            }}
+          >
+            We offer delivery on Friday and Saturday from
+            <span style={{ whiteSpace: 'nowrap' }}> 4pm to 9pm</span>
+          </div>
+
         </div>
       </div>
     </Layout>

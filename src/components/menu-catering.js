@@ -35,7 +35,7 @@ const CateringMenu = () => (
 
           <MenuSection
             heading="Meatballs"
-            items={[['Half Tray', 35, '(20 pieces)'], ['Full Tray', 70, '(40 pieces)']]}
+            items={[['Half Tray', 40, '(20 pieces)'], ['Full Tray', 80, '(40 pieces)']]}
           />
         </div>
       </div>
