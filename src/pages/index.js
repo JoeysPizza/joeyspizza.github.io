@@ -13,13 +13,13 @@ const IndexPage = () => (
           className="text-center menu-cta-container"
           style={{ margin: '25px 0' }}
         >
-          <h1 style={{ color: '#a60512' }}>
+          <h1 style={{ color: '#a60512', lineHeight: '40px' }}>
             Fresh and delicious pizza, pasta, sandwiches and more.
           </h1>
           <Link
             className="btn btn-primary btn-lg"
             to="/menu/"
-            style={{ margin: '20px 0', fontWeight: 'bold', minWidth: '250px' }}
+            style={{ margin: '25px 0', fontWeight: 'bold', minWidth: '250px' }}
           >
             View Menu
           </Link>
@@ -27,7 +27,7 @@ const IndexPage = () => (
           <div
             style={{
               fontSize: '30px',
-              margin: '20px auto 60px auto',
+              margin: '25px auto 50px auto',
               color: 'rgb(166, 5, 18)',
               border: '1px solid black',
               padding: '20px 10px'
