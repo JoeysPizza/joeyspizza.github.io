@@ -15,21 +15,21 @@ const Menu = () => (
           <MenuSection
             heading="Cheese Pizza"
             items={[
-              ['Small (10″)', 8.95],
-              ['Medium (12″)', 12],
-              ['Large (14″)', 14],
-              ['Extra Large (16″)', 16.5],
+              ['Small (10″)', 9.95],
+              ['Medium (12″)', 13],
+              ['Large (14″)', 15],
+              ['Extra Large (16″)', 17],
             ]}
           >
-            <p className="small font-italic">Pizza by the slice is $3.50</p>
+            <p className="small font-italic">Pizza by the slice is $4.00</p>
           </MenuSection>
 
           <MenuSection
             heading="Deep Dish Cheese Pizza"
             items={[
-              ['Small (10″)', 11],
-              ['Medium (12″)', 14.5],
-              ['Large (14″)', 17.5],
+              ['Small (10″)', 12],
+              ['Medium (12″)', 15.5],
+              ['Large (14″)', 18.5],
             ]}
           />
 
@@ -116,8 +116,8 @@ const Menu = () => (
               ['Homemade Italian Beef', 6.99],
               ['Italian Sausage', 5.25],
               ['Combo (Beef & Sausage)', 8],
-              ['Char-Broil Steak Sandwich', 8],
-              ['Philly Cheese Steak', 8],
+              ['Char-Broil Steak Sandwich', 9.25],
+              ['Philly Cheese Steak', 9.25],
               ['Chicago Vienna Hot Dog with Fries', 3.75],
               ['Maxwell Street Polish with Fries', 5.5],
               ['Chicken Sandwich', 6],
@@ -147,8 +147,8 @@ const Menu = () => (
           <MenuSection
             heading="Side Orders"
             items={[
-              ['French Fries', 2.45],
-              ['Cheese Fries', 2.95],
+              ['French Fries', 2.75],
+              ['Cheese Fries', 3.25],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
               ['Chicken Tenders', 4.5],
