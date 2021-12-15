@@ -53,7 +53,7 @@ const partyPacks = () => (
       <Card
         heading="Party Pack #3"
         subHeading="Feeds 40-50"
-        price="$298.00"
+        price="$350.00"
         items={[
           '10 Pounds of Homemade Beef & Gravy',
           '10 Loaves of French Bread',

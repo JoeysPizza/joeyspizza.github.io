@@ -15,16 +15,16 @@ const CateringMenu = () => (
           <MenuSection
             heading="Mostaccioli"
             items={[
-              ['Half Tray', 21.95, '(serves 7-10)'],
-              ['Full Tray', 35, '(serves 15-20)'],
+              ['Half Tray', 30, '(serves 7-10)'],
+              ['Full Tray', 55, '(serves 15-20)'],
             ]}
           />
 
           <MenuSection
             heading="Baked Mostaccioli with Ricotta"
             items={[
-              ['Half Tray', 31.95, '(serves 7-10)'],
-              ['Full Tray', 54, '(serves 15-20)'],
+              ['Half Tray', 30, '(serves 7-10)'],
+              ['Full Tray', 60, '(serves 15-20)'],
             ]}
           />
 
@@ -62,8 +62,8 @@ const CateringMenu = () => (
           <MenuSection
             heading="Homemade Beef and Gravy"
             items={[
-              ['Beef', '$12.50 a pound'],
-              ['French Bread', '$3.50 a loaf'],
+              ['Beef', '$15.50 a pound'],
+              ['French Bread', '$3.95 a loaf'],
             ]}
           />
 
