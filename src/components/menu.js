@@ -113,18 +113,18 @@ const Menu = () => (
           <MenuSection
             heading="Sandwiches"
             items={[
-              ['Homemade Italian Beef', 6.99],
-              ['Italian Sausage', 5.25],
-              ['Combo (Beef & Sausage)', 8],
+              ['Homemade Italian Beef', 7.5],
+              ['Italian Sausage', 6.5],
+              ['Combo (Beef & Sausage)', 8.5],
               ['Char-Broil Steak Sandwich', 9.25],
               ['Philly Cheese Steak', 9.25],
-              ['Chicago Vienna Hot Dog with Fries', 3.75],
+              ['Chicago Vienna Hot Dog with Fries', 4],
               ['Maxwell Street Polish with Fries', 5.5],
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
               ['Italian Breaded Steak', 8],
               ['Chicken Parmesan', 7],
-              ['Meatball', 6],
+              ['Meatball', 7],
               ['Pepper & Eggs Sandwich', 5.5],
               ['Egg Plant Sandwich', 6],
               ['Italian Sub', 7],
@@ -162,8 +162,8 @@ const Menu = () => (
           <MenuSection
             heading="Beverages"
             items={[
-              ['Cans', 1],
-              ['1 Liter Pop', 1.95],
+              ['Cans', 1.25],
+              ['1 Liter Pop', 2.2],
               ['20 Oz. Fountain', 1.75],
               ['Water', 1],
             ]}
