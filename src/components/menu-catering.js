@@ -23,8 +23,8 @@ const CateringMenu = () => (
           <MenuSection
             heading="Baked Mostaccioli with Ricotta"
             items={[
-              ['Half Tray', 30, '(serves 7-10)'],
-              ['Full Tray', 60, '(serves 15-20)'],
+              ['Half Tray', 45, '(serves 7-10)'],
+              ['Full Tray', 65, '(serves 15-20)'],
             ]}
           />
 
@@ -70,8 +70,8 @@ const CateringMenu = () => (
           <MenuSection
             heading="Tossed Salad"
             items={[
-              ['Half Tray', 14, '(serves 7-10)'],
-              ['Full Tray', 24, '(serves 15-20)'],
+              ['Half Tray', 24, '(serves 7-10)'],
+              ['Full Tray', 40, '(serves 15-20)'],
             ]}
           />
 
