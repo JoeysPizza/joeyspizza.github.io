@@ -61,11 +61,11 @@ const Menu = () => (
           <MenuSection
             heading="Pastas"
             items={[
-              ['Ravioli', 9.5],
-              ['Gnocchi', 9.5],
-              ['Tortellini', 9.5],
-              ['Spaghetti', 8],
-              ['Rigatoni', 8],
+              ['Ravioli', 11.25],
+              ['Gnocchi', 11.25],
+              ['Tortellini', 11.25],
+              ['Spaghetti', 9.75],
+              ['Rigatoni', 9.75],
             ]}
           >
             <p className="small font-italic">
