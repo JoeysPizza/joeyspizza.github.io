@@ -25,7 +25,7 @@ const partyPacks = () => (
       <Card
         heading="Party Pack #1"
         subHeading="Feeds 10-15"
-        price="$58.00"
+        price="$70.00"
         items={[
           '3 Pounds of Homemade Beef & Gravy',
           '3 Loaves of French Bread',
@@ -39,7 +39,7 @@ const partyPacks = () => (
       <Card
         heading="Party Pack #2"
         subHeading="Feeds 20-25"
-        price="$89.00"
+        price="$105.00"
         items={[
           '5 Pounds of Homemade Beef & Gravy',
           '5 Loaves of French Bread',
@@ -53,7 +53,7 @@ const partyPacks = () => (
       <Card
         heading="Party Pack #3"
         subHeading="Feeds 40-50"
-        price="$350.00"
+        price="$400.00"
         items={[
           '10 Pounds of Homemade Beef & Gravy',
           '10 Loaves of French Bread',
