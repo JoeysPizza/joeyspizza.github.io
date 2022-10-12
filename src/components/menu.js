@@ -138,11 +138,16 @@ const Menu = () => (
           <MenuSection
             heading="Chicken Wings"
             items={[
-              ['5 Pieces with Fries', 6.99],
-              ['10 Pieces with Fries', 9.50],
-              ['20 Pieces with Fries', 17.50]
+              ['5 Pieces with Fries', 8.99],
+              ['10 Pieces with Fries', 15.00],
+              ['20 Pieces with Fries', 25.00]
             ]}
-          />
+          >
+
+            <p className="small font-italic">
+              Additional pieces for $1.50
+            </p>
+          </MenuSection>
 
           <MenuSection
             heading="Side Orders"
@@ -162,8 +167,8 @@ const Menu = () => (
           <MenuSection
             heading="Beverages"
             items={[
-              ['Cans', 1.25],
-              ['1 Liter Pop', 2.2],
+              ['Cans', 1.36],
+              ['1 Liter Pop', 2.5],
               ['20 Oz. Fountain', 1.75],
               ['Water', 1],
             ]}
