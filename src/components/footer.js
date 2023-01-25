@@ -103,7 +103,7 @@ const Footer = () => (
 
         <p>Joeys Pizza is on Grubhub!</p>
         <a
-          href="https://www.grubhub.com/restaurant/joeys-pizza-1801-s-wolf-rd-hillside/2057225"
+          href="https://joeyspizza.dine.online/"
           target="_blank"
           rel="noopener noreferrer"
         >
