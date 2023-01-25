@@ -93,8 +93,8 @@ const Menu = () => (
           <MenuSection
             heading="Burgers"
             items={[
-              ['Hamburger with Fries', 5],
-              ['Cheeseburger with Fries', 5.5],
+              ['Hamburger with Fries', 6],
+              ['Cheeseburger with Fries', 6.5],
             ]}
           />
         </div>
@@ -122,7 +122,7 @@ const Menu = () => (
               ['Maxwell Street Polish with Fries', 5.5],
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
-              ['Italian Breaded Steak', 8],
+              ['Italian Breaded Steak', 9.25],
               ['Chicken Parmesan', 7],
               ['Meatball', 7],
               ['Pepper & Eggs Sandwich', 5.5],
@@ -152,7 +152,7 @@ const Menu = () => (
           <MenuSection
             heading="Side Orders"
             items={[
-              ['French Fries', 2.75],
+              ['French Fries', 2.95],
               ['Cheese Fries', 3.25],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
