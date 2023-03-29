@@ -79,12 +79,12 @@ const Menu = () => (
             items={[
               [
                 'Chicken Salad',
-                7,
+                8,
                 'Romaine lettuce, tomato, & parmesan cheese',
               ],
               [
                 "Caruso's Salad",
-                7,
+                8,
                 'Lettuce, tomato, salami, black olives, pepperoncinis, provolone, garlic, and italian dressing',
               ],
             ]}
@@ -118,7 +118,7 @@ const Menu = () => (
               ['Combo (Beef & Sausage)', 8.5],
               ['Char-Broil Steak Sandwich', 9.25],
               ['Philly Cheese Steak', 9.25],
-              ['Chicago Vienna Hot Dog with Fries', 4],
+              ['Chicago Vienna Hot Dog with Fries', 5],
               ['Maxwell Street Polish with Fries', 5.5],
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
@@ -152,8 +152,8 @@ const Menu = () => (
           <MenuSection
             heading="Side Orders"
             items={[
-              ['French Fries', 2.95],
-              ['Cheese Fries', 3.25],
+              ['French Fries', 3.5],
+              ['Cheese Fries', 3.95],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
               ['Chicken Tenders', 4.5],
