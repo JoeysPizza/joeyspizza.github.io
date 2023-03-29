@@ -123,10 +123,10 @@ const Menu = () => (
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
               ['Italian Breaded Steak', 9.25],
-              ['Chicken Parmesan', 7],
+              // ['Chicken Parmesan', 7],
               ['Meatball', 7],
               ['Pepper & Eggs Sandwich', 5.5],
-              ['Egg Plant Sandwich', 6],
+              // ['Egg Plant Sandwich', 6],
               ['Italian Sub', 7],
             ]}
           >
@@ -156,13 +156,13 @@ const Menu = () => (
               ['Cheese Fries', 3.95],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
-              ['Chicken Tenders', 4.5],
+              // ['Chicken Tenders', 4.5],
               ['Garlic Bread', 1.75],
               ['Gravy Bread', 1.5],
             ]}
           />
 
-          <MenuSection heading="Italian Desserts" items={[['Cannoli', 3]]} />
+          {/* <MenuSection heading="Italian Desserts" items={[['Cannoli', 3]]} /> */}
 
           <MenuSection
             heading="Beverages"
