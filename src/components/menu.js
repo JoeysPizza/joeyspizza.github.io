@@ -119,7 +119,7 @@ const Menu = () => (
               ['Char-Broil Steak Sandwich', 9.25],
               ['Philly Cheese Steak', 9.25],
               ['Chicago Vienna Hot Dog with Fries', 5],
-              ['Maxwell Street Polish with Fries', 5.5],
+              ['Maxwell Street Polish with Fries', 6],
               ['Chicken Sandwich', 6],
               ['Fish Sandwich with Fries', 6],
               ['Italian Breaded Steak', 9.25],
@@ -127,7 +127,7 @@ const Menu = () => (
               ['Meatball', 7],
               ['Pepper & Eggs Sandwich', 5.5],
               // ['Egg Plant Sandwich', 6],
-              ['Italian Sub', 7],
+              // ['Italian Sub', 7],
             ]}
           >
             <p className="small font-italic">
@@ -152,13 +152,13 @@ const Menu = () => (
           <MenuSection
             heading="Side Orders"
             items={[
-              ['French Fries', 3.5],
-              ['Cheese Fries', 3.95],
+              ['French Fries', 3.65],
+              // ['Cheese Fries', 3.95],
               ['Cheese Sticks', 3.95],
               ['Onion Rings', 3.95],
               // ['Chicken Tenders', 4.5],
               ['Garlic Bread', 1.75],
-              ['Gravy Bread', 1.5],
+              // ['Gravy Bread', 1.5],
             ]}
           />
 
@@ -167,9 +167,9 @@ const Menu = () => (
           <MenuSection
             heading="Beverages"
             items={[
-              ['Cans', 1.36],
-              ['1 Liter Pop', 2.5],
-              ['20 Oz. Fountain', 1.75],
+              ['Cans', 1.5],
+              ['1 Liter Pop', 2.75],
+              ['20 Oz. Fountain', 1.95],
               ['Water', 1],
             ]}
           />
