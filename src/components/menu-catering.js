@@ -77,7 +77,7 @@ const CateringMenu = () => (
 
           <MenuSection
             heading="Hot or Sweet Peppers"
-            items={[['1/2 Pint', 2.25], ['Pint', 4.25], ['Quart', 6.50]]}
+            items={[['1/2 Pint', 2.75], ['Pint', 5], ['Quart', 8]]}
           />
         </div>
       </div>
