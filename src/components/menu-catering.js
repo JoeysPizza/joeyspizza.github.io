@@ -15,16 +15,16 @@ const CateringMenu = () => (
           <MenuSection
             heading="Mostaccioli"
             items={[
-              ['Half Tray', 30, '(serves 7-10)'],
-              ['Full Tray', 55, '(serves 15-20)'],
+              ['Half Tray', 44, '(serves 7-10)'],
+              ['Full Tray', 88, '(serves 15-20)'],
             ]}
           />
 
           <MenuSection
             heading="Baked Mostaccioli with Ricotta"
             items={[
-              ['Half Tray', 45, '(serves 7-10)'],
-              ['Full Tray', 65, '(serves 15-20)'],
+              ['Half Tray', 59, '(serves 7-10)'],
+              ['Full Tray', 98, '(serves 15-20)'],
             ]}
           />
 
@@ -34,8 +34,11 @@ const CateringMenu = () => (
           />
 
           <MenuSection
-            heading="Meatballs"
-            items={[['Half Tray', 40, '(20 pieces)'], ['Full Tray', 80, '(40 pieces)']]}
+            heading="Tortellini"
+            items={[
+              ['Half Tray', 49, '(serves 7-10)'],
+              ['Full Tray', 98, '(serves 15-20)'],
+            ]}
           />
         </div>
       </div>
@@ -51,6 +54,11 @@ const CateringMenu = () => (
       >
         <div style={{ width: '350px' }}>
           <MenuSection
+            heading="Meatballs"
+            items={[['Half Tray', 40, '(20 pieces)'], ['Full Tray', 80, '(40 pieces)']]}
+          />
+
+          <MenuSection
             heading="Italian Sausage"
             items={[['5 pounds', 43], ['10 pounds', 73]]}
           >
@@ -62,7 +70,7 @@ const CateringMenu = () => (
           <MenuSection
             heading="Homemade Beef and Gravy"
             items={[
-              ['Beef', '$15.50 a pound'],
+              ['Beef', '$18.50 a pound'],
               ['French Bread', '$3.95 a loaf'],
             ]}
           />
