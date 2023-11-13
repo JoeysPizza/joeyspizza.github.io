@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkjoeyspizza_github_io=self.webpackChunkjoeyspizza_github_io||[]).push([[256],{7291:function(e,t,n){n.r(t),n.d(t,{default:function(){return a}});var u=n(7294),s=n(7726);function a(){return u.createElement(s.Z,null,u.createElement("h1",null,"NOT FOUND"),u.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-jsx-68a4acd764ff4f113b06.js.map
