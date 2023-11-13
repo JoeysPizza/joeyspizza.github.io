@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby-link'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap'
 
 import Logo from './logo'
@@ -23,7 +23,7 @@ export default class Header extends Component {
       <Navbar
         dark
         expand="md"
-        className="fixed-top"
+        className="sticky-top"
         style={{ backgroundColor: '#000' }}
       >
         <div className="container">
@@ -31,7 +31,7 @@ export default class Header extends Component {
             to="/"
             className="navbar-brand"
             onClick={this.close}
-            style={{ paddingBottom: '3px' }}
+            style={{ paddingBottom: '3px', height: '52.5px' }}
           >
             <Logo />
           </Link>

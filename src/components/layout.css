@@ -1,10 +1,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #650205;
-  margin-top: 68px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: bold;
@@ -31,10 +33,10 @@ ul.leaders li:before {
   width: 0;
   white-space: nowrap;
   color: black;
-  content: ". . . . . . . . . . . . . . . . . . . . "
-           ". . . . . . . . . . . . . . . . . . . . "
-           ". . . . . . . . . . . . . . . . . . . . "
-           ". . . . . . . . . . . . . . . . . . . . "
+  content: '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . '
+    '. . . . . . . . . . . . . . . . . . . . ';
 }
 
 ul.leaders span:first-child {
@@ -102,7 +104,7 @@ footer .col-md {
   }
 }
 
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .card-party-pack .card-body {
     min-height: 290px;
   }

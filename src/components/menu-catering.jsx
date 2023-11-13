@@ -30,7 +30,10 @@ const CateringMenu = () => (
 
           <MenuSection
             heading="Cheese Ravioli"
-            items={[['30 Pieces', 55], ['60 Pieces', 105]]}
+            items={[
+              ['30 Pieces', 55],
+              ['60 Pieces', 105],
+            ]}
           />
 
           <MenuSection
@@ -55,12 +58,18 @@ const CateringMenu = () => (
         <div style={{ width: '350px' }}>
           <MenuSection
             heading="Meatballs"
-            items={[['Half Tray', 40, '(20 pieces)'], ['Full Tray', 80, '(40 pieces)']]}
+            items={[
+              ['Half Tray', 40, '(20 pieces)'],
+              ['Full Tray', 80, '(40 pieces)'],
+            ]}
           />
 
           <MenuSection
             heading="Italian Sausage"
-            items={[['5 pounds', 43], ['10 pounds', 73]]}
+            items={[
+              ['5 pounds', 43],
+              ['10 pounds', 73],
+            ]}
           >
             <p className="small font-italic">
               Served with Sweet Peppers &amp; Marinara Sauce
@@ -85,7 +94,11 @@ const CateringMenu = () => (
 
           <MenuSection
             heading="Hot or Sweet Peppers"
-            items={[['1/2 Pint', 2.75], ['Pint', 5], ['Quart', 8]]}
+            items={[
+              ['1/2 Pint', 2.75],
+              ['Pint', 5],
+              ['Quart', 8],
+            ]}
           />
         </div>
       </div>
